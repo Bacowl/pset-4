@@ -3,15 +3,34 @@ const readlineSync = require("readline-sync");
 var lower = null;
 var upper = null;
 var total = 0;
+var check = null;
 
-while (lower==null || upper == null || lower >= upper || Number.isNaN(lower) || Number.isNaN(upper) || Math.round(upper) != upper || Math.round(lower) != lower || upper < Number.MIN_SAFE_INTEGER || lower < Number.MIN_SAFE_INTEGER ||  upper > Number.MAX_SAFE_INTEGER || lower > Number.MAX_SAFE_INTEGER) {
+console.log()
+
+while (check != 1) {
   var lower = Number (readlineSync.question("Lower bound: "));
   var upper = Number (readlineSync.question("Upper bound: "));
+  if (lower%1!==0 || upper%1!==0){
+    var check = null;
+  } else if (lower >= upper) {
+      var check = null;
+  } else if (upper < Number.MIN_SAFE_INTEGER || upper > Number.MAX_SAFE_INTEGER) {
+      var check = null;
+  } else if (lower < Number.MIN_SAFE_INTEGER || lower > Number.MAX_SAFE_INTEGER) {
+     var check = null;
+  } else {
+    var check = 1;
+  }
 }
-while (upper != lower) {
-  var total = upper + total;
+
+if (upper%2==1) {
   var upper= --upper;
+}
+
+while (upper >= lower) {
+  var total = upper + total;
+  var upper= upper-2;
 }
 let Final = total.toLocaleString("En")
 
-console.log(total)
+console.log("\n"+Final+".")
