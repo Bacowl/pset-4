@@ -5,7 +5,7 @@ console.log()
 
 var number = null;
 var fibonacci1 = 0;
-var fibonacci2 = 0;
+var fibonacci2 = 1;
 var fibonacciCurrent = 0;
 
 while (number < 1 || number % 1 != 0 || number > 78) {
