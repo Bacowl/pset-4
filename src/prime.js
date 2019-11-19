@@ -2,10 +2,10 @@ const readlineSync = require("readline-sync");
 
 console.log()
 
-var number = null;
+var number = -1;
 var loop = 2;
 
-while ( number == null || if number < 0 || number % 1 != 0 || number > Number.MAX_SAFE_INTEGER) {
+while (number < 0 || number % 1 != 0 || number > Number.MAX_SAFE_INTEGER) {
 var number= Number (readlineSync.question("Positive integer: "));
 }
 
