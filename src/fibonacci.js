@@ -1,4 +1,4 @@
- 
+
 const readlineSync = require("readline-sync");
 
 console.log()
@@ -18,4 +18,4 @@ for (loop = 1; loop < number; loop++) {
  var fibonacci2 = fibonacciCurrent;
 }
 
-Console.log(fibonacci2.toLocaleString("en") + ".")
+console.log("\n" + fibonacci2.toLocaleString("en") + ".")
