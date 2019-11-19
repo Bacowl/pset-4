@@ -19,14 +19,13 @@ while (height2 > 1) {
 }
 for (var loop = 0; loop < height3; loop++) {
   var reverse = reverse + string.charAt(height3-loop)
-  console.log(reverse)
 }
 console.log("\n" + string + "  " + reverse)
 
 while (height > 1) {
   var newstring = string.replace(" #", "##")
   for (var loop = 0; loop < height3; loop++) {
-    var reverse = reverse + string.charAt(height3-loop)
+    var reverse = reverse + newstring.charAt(height3-loop)
   }
   console.log(newstring + "  " + reverse)
   --height
