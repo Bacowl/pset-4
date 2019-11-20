@@ -24,3 +24,4 @@ while (height > 1) {
   --height
   var string = newstring
 }
+console.log()

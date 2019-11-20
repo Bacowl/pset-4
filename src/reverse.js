@@ -28,3 +28,4 @@ if (loop < digit - 1 ) {
  var number = (number - (number - Math.floor(number)))
 }
  console.log(string)
+ console.log()

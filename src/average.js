@@ -18,3 +18,5 @@ while ( number == null || number > 0 || moreThanOne <= 1) {
     --moreThanOne;
   }
 }
+
+console.log()

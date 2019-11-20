@@ -26,3 +26,4 @@ for (var loop = 0; loop < digit; loop++) {
  var number = (number - (number - Math.floor(number)))
 }
  console.log("\n" + addition + ".")
+ console.log()

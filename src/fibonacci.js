@@ -19,3 +19,4 @@ for (loop = 1; loop < number; loop++) {
 }
 
 console.log("\n" + fibonacci2.toLocaleString("en") + ".")
+console.log()

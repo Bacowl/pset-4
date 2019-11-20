@@ -33,3 +33,4 @@ while (height > 1) {
   var string = newString
   var reverse = newReverse
 }
+console.log()

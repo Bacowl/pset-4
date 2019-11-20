@@ -47,3 +47,4 @@ if (addition/10 % 1 != 0) {
 } else if ((digit == 13 || digit == 16) && firstDigit == 4) {
   console.log("\nVisa.")
 }
+console.log()

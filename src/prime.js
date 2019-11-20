@@ -20,3 +20,4 @@ while (loop <= Math.sqrt(number) && end != 1) {
 if (end != 1) {
   console.log("\nPrime.")
 }
+console.log()

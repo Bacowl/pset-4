@@ -34,3 +34,4 @@ while (upper >= lower) {
 let Final = total.toLocaleString("En")
 
 console.log("\n"+Final+".")
+console.log()

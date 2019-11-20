@@ -38,3 +38,4 @@ while (loop < numberLoop) {
 }
 
 console.log(string)
+console.log()
