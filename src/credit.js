@@ -19,24 +19,23 @@ while (cardNumber2 >= 1) {
   var digit = digit + 1;
 }
 
-var firstDigit =  Math.floor(cardNumber/10**(digit-1))
-var secondDigits = (Math.floor(cardNumber/10**(digit-2))/10)*10
+var firstDigit =  Math.floor(cardNumber/10**(digit-1));
+var secondDigits = (Math.floor(cardNumber/10**(digit-2))/10)*10;
 
 for (var loop = 0; loop < digit; loop++) {
-  var singularDigit = (cardNumber - Math.floor(cardNumber/10)*10)
-    var singularDigit = (singularDigit*10)
-    var cardNumber = Math.floor(cardNumber/10);
-  if (count % 2 == 0) {
+  var singularDigit = (cardNumber - Math.floor(cardNumber/10)*10);
+  var singularDigit = (singularDigit*1);
+  var cardNumber = Math.floor(cardNumber/10);
+  if (loop % 2 == 1) {
     if (singularDigit*2 >= 10) {
-      var addition = addition + ((singularDigit*2 - singularDigit*2%10)/10 + singularDigit*2%10)/2
-    } else {
-      var addition = addition + singularDigit*1000000000
+      var addition = addition + ((singularDigit*2 - singularDigit*2%10)/10 + singularDigit*2%10);
+    } else if (singularDigit*2 < 10) {
+      var addition = addition + singularDigit*2;
     }
   } else {
-  var addition = addition + singularDigit/10
+  var addition = addition + singularDigit;
   }
-  console.log(addition)
-  ++count
+  ++count;
 }
 
 if (addition/10 % 1 != 0) {
